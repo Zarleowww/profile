@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marleowww</title>
+  
+<!-- ✅ FAVICON (FIXED) -->
+<link rel="icon" href="https://marleowww.qzz.io/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="https://marleowww.qzz.io/image/icon.png">
+<link rel="apple-touch-icon" href="https://marleowww.qzz.io/image/icon.png">
+
+<!-- ✅ EMBED PREVIEW -->
+<meta property="og:title" content="Marleowww">
+<meta property="og:description" content="I’m Marleowww — a gamer, student, and creative person.">
+<meta property="og:image" content="https://marleowww.qzz.io/image/preview.png">
+<meta property="og:image:secure_url" content="https://marleowww.qzz.io/image/preview.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marleowww.qzz.io/">
+
+<meta name="theme-color" content="#7f00ff">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* 🌌 BACKGROUND */
+body{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 20% 20%, #7f2cff44, transparent 40%),
+    radial-gradient(circle at 80% 30%, #ff005544, transparent 45%),
+    linear-gradient(135deg,#0b001a,#1a0033,#12001f);
+  animation:bgShift 20s infinite alternate;
+}
+
+@keyframes bgShift{
+  from{background-position:0% 0%}
+  to{background-position:100% 100%}
+}
+
+/* HASHIRA */
+.hashira{
+  position:fixed;
+  font-size:160px;
+  color:#b300ff;
+  opacity:0.08;
+  animation:hashiraGlow 5s infinite;
+  z-index:0;
+  pointer-events:none;
+}
+
+@keyframes hashiraGlow{
+  0%,100%{text-shadow:0 0 15px #b300ff}
+  50%{text-shadow:0 0 60px #ff0033}
+}
+
+/* CARD */
+.profile-card{
+  position:relative;
+  z-index:5;
+  width:100%;
+  max-width:900px;
+  display:flex;
+  border-radius:24px;
+  overflow:hidden;
+  background:rgba(20,0,40,0.78);
+  backdrop-filter:blur(18px);
+  box-shadow:0 40px 80px rgba(0,0,0,0.6);
+}
+
+/* LEFT */
+.profile-left{
+  flex:1;
+  background:linear-gradient(135deg,#4b0082,#2a003d);
+  color:#fff;
+  padding:40px;
+  text-align:center;
+}
+
+.avatar{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border:4px solid #b300ff;
+  box-shadow:0 0 35px #b300ff;
+  margin-bottom:15px;
+}
+
+.profile-left h2{
+  font-size:26px;
+  margin-bottom:6px;
+}
+
+.profile-left p{
+  opacity:0.85;
+}
+
+/* RIGHT */
+.profile-right{
+  flex:2;
+  padding:40px;
+  color:#ddd;
+}
+
+.profile-right h3{
+  color:#d6b3ff;
+  margin-bottom:10px;
+}
+
+.profile-right p{
+  margin-bottom:22px;
+  line-height:1.6;
+}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.social img{
+  width:33px;
+  filter:invert(1);
+  transition:transform .25s, filter .25s;
+}
+
+.social img:hover{
+  transform:scale(1.1);
+  filter:drop-shadow(0 0 10px #b300ff);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .profile-card{
+    flex-direction:column;
+    margin:20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hashira">炎</div>
+
+<div class="profile-card">
+  <div class="profile-left">
+    <img src="image/Marleowww.png" class="avatar" alt="Marleowww">
+    <h2>Marleowww</h2>
+    <p>Gamer • Student</p>
+  </div>
+
+  <div class="profile-right">
+    <h3>About Me</h3>
+    <p>
+      I’m Marleowww — a gamer, student, and creative person who loves exploring new ideas,
+      gaming worlds, and expressing creativity in unique ways.
+    </p>
+
+    <h3>Connect</h3>
+    <div class="social">
+      <a href="https://discord.gg/kFtxPth4Rh" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg">
+      </a>
+      <a href="https://www.youtube.com/@Marleowww" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
